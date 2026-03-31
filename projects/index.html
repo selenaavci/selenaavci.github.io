@@ -3,237 +3,207 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Selena Avcı</title>
-  <meta
-    name="description"
-    content="Selected AI, ML, NLP, automation, and solution design projects by Selena Avcı."
-  />
+  <title>Projects | Selena Avci</title>
+  <meta name="description" content="Selected AI, ML, NLP, automation, and solution design projects by Selena Avci." />
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <div class="site-shell">
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <a class="brand" href="/">Selena Avcı</a>
-        <nav class="nav">
-          <a href="/">Home</a>
-          <a href="/projects/">Projects</a>
-          <a href="/certificates/">Certificates</a>
-          <a href="https://www.linkedin.com/in/selenaavci" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/selenaavci" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </nav>
+  <div class="bg-glow"></div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="/">Selena Avci</a>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/projects/" class="active">Projects</a>
+        <a href="/certificates/">Certificates</a>
+        <a href="https://www.linkedin.com/in/selenaavci" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/selenaavci" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container fade-in fade-in-1">
+        <p class="section-label">Selected Work</p>
+        <h1>Projects</h1>
+        <p>Applied AI, ML, NLP, automation, and solution design.</p>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="page-hero">
-        <div class="container">
-          <p class="eyebrow">Selected Work</p>
-          <h1>PROJECTS</h1>
-          <p class="page-intro">
-            Applied AI, ML, NLP, automation, and solution design projects.
-          </p>
+    <section class="section">
+      <div class="container">
+        <div class="project-grid">
+
+          <article class="project fade-in fade-in-2">
+            <div class="project-top">
+              <h2>AI-Powered Quiz Generation System</h2>
+              <span class="badge">LLM System</span>
+            </div>
+            <ul class="project-desc">
+              <li>Multi-stage LLM pipeline generating MCQ, True/False, and Fill-in-the-Blank questions from training documents.</li>
+              <li>Content chunking, semantic routing, and validation layers with observability metrics.</li>
+              <li>Production-ready testing phase for internal deployment.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">LLM</span>
+              <span class="tag">Multi-Stage Pipeline</span>
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">Semantic Routing</span>
+              <span class="tag">Validation Layer</span>
+              <span class="tag">Streamlit</span>
+            </div>
+          </article>
+
+          <article class="project fade-in fade-in-2">
+            <div class="project-top">
+              <h2>AI-Driven Email Automation System</h2>
+              <span class="badge">Automation</span>
+            </div>
+            <ul class="project-desc">
+              <li>Automated email workflows using n8n, LLM APIs, and Brevo with conditional logic and segmentation.</li>
+              <li>Google Sheets integration for dynamic campaign management.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">n8n</span>
+              <span class="tag">LLM APIs</span>
+              <span class="tag">Workflow Automation</span>
+              <span class="tag">Brevo</span>
+              <span class="tag">Google Sheets</span>
+            </div>
+          </article>
+
+          <article class="project fade-in fade-in-3">
+            <div class="project-top">
+              <h2>Address Validation System & Model Comparison</h2>
+              <span class="badge">NLP</span>
+            </div>
+            <ul class="project-desc">
+              <li>NLP-based address error detection with hybrid rule-based + ML approaches.</li>
+              <li>Compared XGBoost, LightGBM, and CatBoost; optimized with threshold tuning.</li>
+              <li>Model selection based on business requirements and evaluation metrics.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">NLP</span>
+              <span class="tag">XGBoost</span>
+              <span class="tag">LightGBM</span>
+              <span class="tag">CatBoost</span>
+              <span class="tag">Threshold Tuning</span>
+              <span class="tag">Model Comparison</span>
+            </div>
+          </article>
+
+          <article class="project fade-in fade-in-3">
+            <div class="project-top">
+              <h2>Domain-Adaptive NER Research on Customer Complaints</h2>
+              <span class="badge">Research</span>
+            </div>
+            <ul class="project-desc">
+              <li>Comparative study of NER vs DSNER on banking customer complaints from social media.</li>
+              <li>Domain adaptation techniques for banking-specific entity recognition, preparing for publication.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">NER</span>
+              <span class="tag">DSNER</span>
+              <span class="tag">Domain Adaptation</span>
+              <span class="tag">Comparative Analysis</span>
+            </div>
+          </article>
+
+          <article class="project fade-in fade-in-4">
+            <div class="project-top">
+              <h2>MLOps for Smart Logistics</h2>
+              <span class="badge">MLOps</span>
+            </div>
+            <ul class="project-desc">
+              <li>ML pipelines using MLflow for experiment tracking, hyperparameter tuning, and model lifecycle management.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">MLflow</span>
+              <span class="tag">Experiment Tracking</span>
+              <span class="tag">Hyperparameter Tuning</span>
+              <span class="tag">Model Lifecycle</span>
+            </div>
+          </article>
+
+          <article class="project fade-in fade-in-4">
+            <div class="project-top">
+              <h2>AI-Powered Book Recommendation Platform</h2>
+              <span class="badge">Recommendation</span>
+            </div>
+            <ul class="project-desc">
+              <li>Context-aware recommendation system with data pipelines for feature extraction and personalization.</li>
+              <li>Full UI design and frontend development with domain integration.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Recommendation System</span>
+              <span class="tag">Context-Aware Design</span>
+              <span class="tag">Frontend Development</span>
+              <span class="tag">UI Design</span>
+            </div>
+          </article>
+
+          <article class="project fade-in fade-in-5">
+            <div class="project-top">
+              <h2>Stroke Prediction</h2>
+              <span class="badge">ML</span>
+            </div>
+            <ul class="project-desc">
+              <li>Prediction pipeline combining healthcare datasets with ElasticNetCV and cross-validation.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">ElasticNetCV</span>
+              <span class="tag">Cross-Validation</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Pandas</span>
+            </div>
+            <a class="project-cta" href="https://github.com/selenaavci/stroke-prediction" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-5">
+            <div class="project-top">
+              <h2>Flavor Predictor</h2>
+              <span class="badge">ML</span>
+            </div>
+            <ul class="project-desc">
+              <li>Flavor recommendation via decision tree classifier based on age and gender inputs.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Decision Tree</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Tabular Data</span>
+            </div>
+            <a class="project-cta" href="https://github.com/selenaavci/flavor-prediction" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-5">
+            <div class="project-top">
+              <h2>Prediction of Customers' Employment Type</h2>
+              <span class="badge">ML</span>
+            </div>
+            <ul class="project-desc">
+              <li>Multiclass logistic regression for employment type prediction from insurance data with EDA.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Logistic Regression</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Seaborn</span>
+              <span class="tag">Classification</span>
+            </div>
+            <a class="project-cta" href="https://github.com/selenaavci/prediction-of-customer-employment-type" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+          </article>
+
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section class="section section-last">
-        <div class="container">
-          <div class="project-list">
-
-            <article class="project-card">
-              <div class="project-header">
-                <h2>AI-Powered Quiz Generation System</h2>
-                <span class="pill">LLM System</span>
-              </div>
-              <ul>
-                <li>Built a multi-stage LLM pipeline to generate MCQ, True/False, and Fill-in-the-Blank questions from training documents.</li>
-                <li>Implemented content chunking, semantic routing, and validation layers.</li>
-                <li>Designed observability metrics such as coverage ratio and reuse rate for quality monitoring.</li>
-                <li>Reached production-ready testing phase for internal deployment.</li>
-              </ul>
-              <div class="project-tags">
-                <span class="project-tag">LLM</span>
-                <span class="project-tag">Multi-Stage Pipeline</span>
-                <span class="project-tag">Prompt Engineering</span>
-                <span class="project-tag">Semantic Routing</span>
-                <span class="project-tag">Validation Layer</span>
-                <span class="project-tag">Streamlit</span>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-header">
-                <h2>AI-Driven Email Automation System</h2>
-                <span class="pill">Automation & Agentic AI</span>
-              </div>
-              <ul>
-                <li>Built automated email workflows using n8n, LLM APIs, and Brevo.</li>
-                <li>Designed multi-step pipelines with conditional logic and segmentation.</li>
-                <li>Integrated Google Sheets for dynamic campaign management.</li>
-              </ul>
-              <div class="project-tags">
-                <span class="project-tag">n8n</span>
-                <span class="project-tag">LLM APIs</span>
-                <span class="project-tag">Workflow Automation</span>
-                <span class="project-tag">Conditional Logic</span>
-                <span class="project-tag">Brevo</span>
-                <span class="project-tag">Google Sheets</span>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-header">
-                <h2>Address Validation System & Model Comparison</h2>
-                <span class="pill">NLP</span>
-              </div>
-              <ul>
-                <li>Developed an NLP-based system for detecting address errors and validating structured address fields.</li>
-                <li>Applied data cleaning, normalization, and hybrid rule-based + ML approaches.</li>
-                <li>Improved address consistency using external datasets.</li>
-                <li>Compared XGBoost, LightGBM, and CatBoost models for address classification tasks.</li>
-                <li>Optimized performance using threshold tuning and evaluation metrics.</li>
-                <li>Selected best-performing models based on business requirements.</li>
-              </ul>
-              <div class="project-tags">
-                <span class="project-tag">NLP</span>
-                <span class="project-tag">Data Cleaning</span>
-                <span class="project-tag">Normalization</span>
-                <span class="project-tag">Rule-Based Methods</span>
-                <span class="project-tag">XGBoost</span>
-                <span class="project-tag">LightGBM</span>
-                <span class="project-tag">CatBoost</span>
-                <span class="project-tag">Threshold Tuning</span>
-                <span class="project-tag">Model Comparison</span>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-header">
-                <h2>Domain-Adaptive NER Research on Customer Complaints</h2>
-                <span class="pill">Research</span>
-              </div>
-              <ul>
-                <li>Conducting a comparative study of NER vs DSNER on customer complaints collected from social media.</li>
-                <li>Applying domain adaptation techniques for banking-specific entity recognition.</li>
-                <li>Designing experiments to evaluate model performance and preparing results for publication.</li>
-              </ul>
-              <div class="project-tags">
-                <span class="project-tag">NER</span>
-                <span class="project-tag">DSNER</span>
-                <span class="project-tag">Domain Adaptation</span>
-                <span class="project-tag">Social Media Data</span>
-                <span class="project-tag">Comparative Analysis</span>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-header">
-                <h2>MLOps for Smart Logistics (MLflow Project)</h2>
-                <span class="pill">MLOps</span>
-              </div>
-              <ul>
-                <li>Built ML pipelines using MLflow for experiment tracking and model management.</li>
-                <li>Developed prediction models with hyperparameter tuning.</li>
-                <li>Managed model lifecycle including training and evaluation.</li>
-              </ul>
-              <div class="project-tags">
-                <span class="project-tag">MLflow</span>
-                <span class="project-tag">Experiment Tracking</span>
-                <span class="project-tag">Hyperparameter Tuning</span>
-                <span class="project-tag">Model Lifecycle</span>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-header">
-                <h2>AI-Powered Book Recommendation Platform</h2>
-                <span class="pill">Recommendation</span>
-              </div>
-              <ul>
-                <li>Developed a context-aware recommendation system based on user preferences.</li>
-                <li>Designed data pipelines for feature extraction and personalization.</li>
-                <li>Designed and implemented the full UI, including frontend development and domain integration.</li>
-              </ul>
-              <div class="project-tags">
-                <span class="project-tag">Recommendation System</span>
-                <span class="project-tag">Context-Aware Design</span>
-                <span class="project-tag">Frontend Development</span>
-                <span class="project-tag">UI Design</span>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-header">
-                <h2>Stroke Prediction</h2>
-                <span class="pill">ML</span>
-              </div>
-              <ul>
-                <li>Built a stroke prediction pipeline using healthcare and training datasets combined into a unified preprocessing workflow.</li>
-                <li>Applied missing value handling, column filtering, and one-hot encoding for structured tabular data preparation.</li>
-                <li>Trained an ElasticNetCV model with cross-validation and generated prediction outputs for test data.</li>
-              </ul>
-              <div class="project-tags">
-                <span class="project-tag">ElasticNetCV</span>
-                <span class="project-tag">Cross-Validation</span>
-                <span class="project-tag">One-Hot Encoding</span>
-                <span class="project-tag">Data Preprocessing</span>
-                <span class="project-tag">Scikit-learn</span>
-                <span class="project-tag">Pandas</span>
-              </div>
-              <div class="project-links">
-                <a class="project-link" href="https://github.com/selenaavci/stroke-prediction" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-header">
-                <h2>Flavor Predictor</h2>
-                <span class="pill">ML</span>
-              </div>
-              <ul>
-                <li>Built a flavor recommendation model to predict preferred flavors based on age and gender inputs.</li>
-                <li>Used structured tabular data and implemented a decision tree classifier for personalized prediction.</li>
-                <li>Created a lightweight machine learning project focused on interpretable rule-based prediction behavior.</li>
-              </ul>
-              <div class="project-tags">
-                <span class="project-tag">Decision Tree Classifier</span>
-                <span class="project-tag">Scikit-learn</span>
-                <span class="project-tag">Pandas</span>
-                <span class="project-tag">Tabular Data</span>
-                <span class="project-tag">Prediction Modeling</span>
-              </div>
-              <div class="project-links">
-                <a class="project-link" href="https://github.com/selenaavci/flavor-prediction" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-header">
-                <h2>Prediction of Customers’ Employment Type</h2>
-                <span class="pill">ML</span>
-              </div>
-              <ul>
-                <li>Developed a multiclass classification project to predict customer employment type from insurance-related structured data.</li>
-                <li>Implemented multiclass logistic regression using scikit-learn and evaluated model behavior with accuracy-based analysis.</li>
-                <li>Performed exploratory data visualization using seaborn and matplotlib to better understand feature distributions and relationships.</li>
-              </ul>
-              <div class="project-tags">
-                <span class="project-tag">Multiclass Logistic Regression</span>
-                <span class="project-tag">Scikit-learn</span>
-                <span class="project-tag">Seaborn</span>
-                <span class="project-tag">Matplotlib</span>
-                <span class="project-tag">Tabular Data</span>
-                <span class="project-tag">Classification</span>
-              </div>
-              <div class="project-links">
-                <a class="project-link" href="https://github.com/selenaavci/prediction-of-customer-employment-type" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-              </div>
-            </article>
-
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Selena Avci</p>
+    </div>
+  </footer>
 </body>
 </html>
