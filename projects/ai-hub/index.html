@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Hub | Selena Avcı</title>
+  <meta name="description" content="AI Hub — internal multi-agent platform for self-service data analytics and ML, built by Selena Avcı." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="/">Selena Avcı</a>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/projects/" class="active">Projects</a>
+        <a href="/certificates/">Certificates</a>
+        <a href="https://www.linkedin.com/in/selenaavci" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/selenaavci" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container fade-in fade-in-1">
+        <p class="section-label">Project Deep Dive</p>
+        <h1>AI HUB</h1>
+        <p>Internal multi-agent AI platform — democratizing data analytics and ML for non-technical business users through 15+ specialized, self-service agents.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="hub-portal fade-in fade-in-2">
+          <div class="hub-portal-text">
+            <p class="section-label">Entry Point</p>
+            <h2>AI Hub Portal</h2>
+            <p>Central landing portal that aggregates all agents and provides unified navigation, dataset routing, and discovery.</p>
+          </div>
+          <a class="hero-link hero-link--primary" href="#" target="_blank" rel="noopener noreferrer">Open Portal &rarr;</a>
+        </div>
+
+        <div class="hub-overview fade-in fade-in-2">
+          <h3>Overview</h3>
+          <p>AI Hub reduces dependency on data science teams by letting business users upload their own datasets and run analytics, modeling, and content-generation workflows through a collection of modular agents. Every agent is self-contained, transparent in its logic, and exports business-ready outputs (Excel, CSV, JSON, dashboards). The platform combines classical ML (scikit-learn) at its core with optional LLM augmentation where natural-language interpretation adds value.</p>
+        </div>
+
+        <p class="section-label fade-in fade-in-3" style="margin-top:48px;">Agents (Alphabetical)</p>
+
+        <div class="project-grid">
+
+          <article class="project fade-in fade-in-3">
+            <div class="project-top">
+              <h2>A/B Testing Agent</h2>
+              <span class="badge">Experimentation</span>
+            </div>
+            <ul class="project-desc">
+              <li>Three-step experiment workflow (define &rarr; upload &rarr; decide) with a single decision card output: ship / hold / continue / no-effect / redesign.</li>
+              <li>Deterministic statistical engine: frequentist tests, confidence intervals, guardrails, segment analysis, and Bayesian probability — LLM is optional and only adds a Turkish executive summary when secrets are configured.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Hypothesis Testing</span>
+              <span class="tag">Confidence Intervals</span>
+              <span class="tag">Bayesian Inference</span>
+              <span class="tag">Guardrail Metrics</span>
+              <span class="tag">Segment Analysis</span>
+              <span class="tag">Streamlit</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-3">
+            <div class="project-top">
+              <h2>Anomaly Detection Agent</h2>
+              <span class="badge">Detection</span>
+            </div>
+            <ul class="project-desc">
+              <li>Runs three unsupervised models in parallel and auto-selects the best by silhouette score; produces per-record anomaly scores and feature-level deviation explanations.</li>
+              <li>Highlights flagged rows in an exportable Excel report ready for risk, audit, and operational review.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Isolation Forest</span>
+              <span class="tag">One-Class SVM</span>
+              <span class="tag">Local Outlier Factor</span>
+              <span class="tag">Silhouette Score</span>
+              <span class="tag">Streamlit</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-3">
+            <div class="project-top">
+              <h2>Data Cleaning Agent</h2>
+              <span class="badge">Preparation</span>
+            </div>
+            <ul class="project-desc">
+              <li>Detects missing values, duplicates, type mismatches, placeholder values, format issues, and outliers; user selects the corrective action per issue.</li>
+              <li>Applies user-approved transformations sequentially and emits a transparent change log so the cleaned dataset feeds downstream agents safely.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">pandas</span>
+              <span class="tag">numpy</span>
+              <span class="tag">Missing Value Imputation</span>
+              <span class="tag">IQR / Winsorize</span>
+              <span class="tag">Type Coercion</span>
+              <span class="tag">Audit Log</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-4">
+            <div class="project-top">
+              <h2>Data Comparison Agent</h2>
+              <span class="badge">Reconciliation</span>
+            </div>
+            <ul class="project-desc">
+              <li>Compares 2&ndash;4 files (CSV / Excel / XML) on a key column; surfaces row-level diffs with yellow / green / red color coding and presence-matrix across files.</li>
+              <li>Metric mode computes percent change, absolute delta, and ratio against a chosen baseline; read-only by design, full Excel export with preserved color encoding.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Key-based Matching</span>
+              <span class="tag">Diff Engine</span>
+              <span class="tag">Percent Change</span>
+              <span class="tag">Read-only Pipeline</span>
+              <span class="tag">Excel Export</span>
+              <span class="tag">Optional LLM Narrative</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-4">
+            <div class="project-top">
+              <h2>Data Quality Agent</h2>
+              <span class="badge">Quality Control</span>
+            </div>
+            <ul class="project-desc">
+              <li>Detects 8 issue types (missing, format, type drift, semantic inconsistency, duplication, range violation, sparse columns, low-signal features) and assigns Low &rarr; Critical risk levels.</li>
+              <li>Cell-level color highlighting and prioritized issue list ensures downstream agents (anomaly, segmentation, forecasting) operate on validated data.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Rule-based Validation</span>
+              <span class="tag">Risk Scoring</span>
+              <span class="tag">Statistical Profiling</span>
+              <span class="tag">Cell-level Highlighting</span>
+              <span class="tag">Excel Reports</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-4">
+            <div class="project-top">
+              <h2>Data Visualization Agent</h2>
+              <span class="badge">Visualization</span>
+            </div>
+            <ul class="project-desc">
+              <li>Auto-profiles columns, recommends chart candidates, and produces interactive Plotly visuals (distribution, trend, correlation, comparison).</li>
+              <li>Manual chart-builder flow for users who want full custom control; bulk download of all generated visuals.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Plotly</span>
+              <span class="tag">Auto Data Profiling</span>
+              <span class="tag">Chart Recommendation</span>
+              <span class="tag">Streamlit</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-4">
+            <div class="project-top">
+              <h2>Feature Engineering Agent</h2>
+              <span class="badge">Preparation</span>
+            </div>
+            <ul class="project-desc">
+              <li>Auto-detects column types and offers type-appropriate transformations alongside &ldquo;What is it? / When to use it?&rdquo; explanations for each option.</li>
+              <li>Every applied transformation is recorded in a timestamped log; output dataset and log are downloadable as CSV / Excel.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Date Decomposition</span>
+              <span class="tag">One-Hot / Frequency Encoding</span>
+              <span class="tag">Z-score</span>
+              <span class="tag">Log Transform</span>
+              <span class="tag">Binning</span>
+              <span class="tag">Missing-Value Flags</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-5">
+            <div class="project-top">
+              <h2>Forecasting Agent</h2>
+              <span class="badge">Time Series</span>
+            </div>
+            <ul class="project-desc">
+              <li>Profiles the series, auto-detects frequency, runs four forecasting models in parallel, and selects the lowest-error model with full transparency on relative performance.</li>
+              <li>What-if scenario overlays for campaigns, special days, and trend assumptions; designed as a decision-support tool, not an autonomous decision engine.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">SARIMA</span>
+              <span class="tag">Prophet</span>
+              <span class="tag">XGBoost</span>
+              <span class="tag">Naive Baseline</span>
+              <span class="tag">What-if Simulation</span>
+              <span class="tag">Confidence Intervals</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-5">
+            <div class="project-top">
+              <h2>MailCraft Agent</h2>
+              <span class="badge">LLM</span>
+            </div>
+            <ul class="project-desc">
+              <li>LLM-powered email generation for new emails or replies; tone, length, category, language, salutation, and corporate signature parameters are enforced via system-prompt engineering.</li>
+              <li>One-click variant regeneration (shorter / more formal / more polite / clearer) and bilingual TR/EN support; works with on-prem vLLM or any OpenAI-compatible endpoint.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">LLM</span>
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">Tone Control</span>
+              <span class="tag">Bilingual TR/EN</span>
+              <span class="tag">vLLM / OpenAI-Compatible</span>
+              <span class="tag">Streamlit</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-5">
+            <div class="project-top">
+              <h2>Mock Data Generator Agent</h2>
+              <span class="badge">Synthetic Data</span>
+            </div>
+            <ul class="project-desc">
+              <li>Two modes: Upload (auto-extracts schema from a sample file and replicates structure) and Scratch (column-by-column definition from zero).</li>
+              <li>Supports schema consistency, categorical weighting, correlation rules, business rules, and noise modes — output up to 1M rows in CSV / Excel / JSON.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Faker</span>
+              <span class="tag">Schema Inference</span>
+              <span class="tag">Statistical Sampling</span>
+              <span class="tag">Correlation Rules</span>
+              <span class="tag">Business Rule Engine</span>
+              <span class="tag">CSV / Excel / JSON Export</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-5">
+            <div class="project-top">
+              <h2>Prompt Optimization Agent</h2>
+              <span class="badge">LLM Tooling</span>
+            </div>
+            <ul class="project-desc">
+              <li>Refines raw user prompts into clearer, more structured, result-focused instructions tailored to a target agent (Code Assist / MailCraft / General Purpose).</li>
+              <li>Acts as a quality multiplier across the rest of AI Hub, indirectly raising the precision of every LLM-backed agent.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">LLM</span>
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">Template Library</span>
+              <span class="tag">Agent-Aware Routing</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-5">
+            <div class="project-top">
+              <h2>Quiz Generator Agent</h2>
+              <span class="badge">Content Generation</span>
+            </div>
+            <ul class="project-desc">
+              <li>Generates context-grounded MCQ, True/False, and Fill-in-the-Blank questions from training documents (PDF, PPTX, DOCX, TXT) using an on-prem / corporate LLM.</li>
+              <li>Document parsing, paragraph-aware chunking, multi-stage LLM generation, quality filters, Turkish-first NFC normalization, and LMS-compatible (enokta) Excel export.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">LLM</span>
+              <span class="tag">Document Parsing</span>
+              <span class="tag">Smart Chunking</span>
+              <span class="tag">Multi-Stage Pipeline</span>
+              <span class="tag">NFC Normalization</span>
+              <span class="tag">vLLM</span>
+              <span class="tag">LMS Excel Export</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-5">
+            <div class="project-top">
+              <h2>Segment Intelligence Agent</h2>
+              <span class="badge">Clustering</span>
+            </div>
+            <ul class="project-desc">
+              <li>Performs unsupervised segmentation and surfaces, for each cluster, summary statistics, distinguishing features, and deltas vs. the overall population.</li>
+              <li>LLM interpretation hook is wired and ready to activate so cluster summaries can be translated into business-language profiles and action ideas.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">K-Means</span>
+              <span class="tag">Cluster Profiling</span>
+              <span class="tag">Feature Differentiation</span>
+              <span class="tag">LLM-ready Interpretation</span>
+              <span class="tag">Streamlit</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-5">
+            <div class="project-top">
+              <h2>Smart Modeling Agent</h2>
+              <span class="badge">AutoML</span>
+            </div>
+            <ul class="project-desc">
+              <li>Five-tab guided flow: upload &rarr; profile &rarr; problem definition &rarr; train &rarr; results. Auto preprocessing (imputation, encoding, optional scaling), stratified split where needed, multi-algorithm comparison.</li>
+              <li>Explicit positioning as a prototyping / exploration tool, not production deployment — every choice is logged into a downloadable Modeling Artifact ZIP for auditability.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">scikit-learn</span>
+              <span class="tag">Classification</span>
+              <span class="tag">Regression</span>
+              <span class="tag">Auto Preprocessing</span>
+              <span class="tag">Stratified Split</span>
+              <span class="tag">Multi-Algorithm Comparison</span>
+              <span class="tag">Modeling Artifact</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+          <article class="project fade-in fade-in-5">
+            <div class="project-top">
+              <h2>Social Pulse AI</h2>
+              <span class="badge">Social Intelligence</span>
+            </div>
+            <ul class="project-desc">
+              <li>Multi-bank social-media analytics platform: sentiment distribution, engagement, reach, anomaly detection, and topic breakdowns from multi-sheet Excel datasets.</li>
+              <li>Modules for brand perception, crisis early-warning, competitor benchmarking, audience profiling, and action recommendations — turns raw comments into &ldquo;Insight &rarr; Decision &rarr; Action&rdquo;.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">LLM</span>
+              <span class="tag">Sentiment Analysis</span>
+              <span class="tag">Anomaly Detection</span>
+              <span class="tag">Competitor Benchmarking</span>
+              <span class="tag">Topic Analytics</span>
+              <span class="tag">Streamlit</span>
+            </div>
+            <a class="project-cta" href="#" target="_blank" rel="noopener noreferrer">Open on Streamlit Cloud &rarr;</a>
+          </article>
+
+        </div>
+
+        <div class="back-link fade-in fade-in-5">
+          <a href="/projects/">&larr; Back to Projects</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Selena Avci</p>
+    </div>
+  </footer>
+</body>
+</html>

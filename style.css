@@ -525,6 +525,82 @@ ul { list-style: none; }
   background: rgba(192,132,252,0.05);
 }
 
+.project-cta--primary {
+  background: var(--gradient);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(192, 132, 252, 0.25);
+}
+
+.project-cta--primary:hover {
+  background: var(--gradient);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 6px 28px rgba(192, 132, 252, 0.35);
+  transform: translateY(-1px);
+}
+
+/* ─── AI Hub Page ─── */
+.hub-portal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px;
+  border-radius: var(--radius);
+  background: var(--gradient-subtle);
+  border: 1px solid rgba(192,132,252,0.18);
+  margin-bottom: 24px;
+}
+
+.hub-portal-text h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.hub-portal-text p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  max-width: 540px;
+}
+
+.hub-overview {
+  padding: 24px 28px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.hub-overview h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.hub-overview p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.back-link {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.back-link a {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.back-link a:hover {
+  color: var(--accent);
+}
+
 /* ─── Certificate Grid ─── */
 .cert-grid {
   display: grid;
@@ -658,6 +734,12 @@ ul { list-style: none; }
   .cert-grid { grid-template-columns: 1fr; }
 
   .page-header { padding-top: 48px; }
+
+  .hub-portal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
 
 @media (max-width: 480px) {
