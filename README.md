@@ -20,8 +20,10 @@ Currently, I am working at **Odeabank** as a Junior ML Engineer focusing on AI &
 ## 💼 Professional Experience
 
 ### 🏦 Odeabank – AI & Digital Solutions
-- Developed **OdeaMind**, an AI-powered quiz generation system for internal training automation
-- Built multi-stage LLM pipelines with validation & quality control layers
+- Designed and built **AI Hub**, an internal multi-agent AI platform with 15+ self-service agents covering data cleaning, quality, anomaly detection, segmentation, forecasting, modeling, and content generation
+- Architected modular agent-based system enabling non-technical business users to upload datasets and generate insights without writing code
+- Built multi-stage LLM pipelines with validation & quality control layers across content-generation agents
+- Combined classical ML (scikit-learn) core with optional LLM augmentation; on-prem / vLLM-compatible deployments for data privacy
 - Designed AI-based solutions for enterprise learning systems
 - Worked on AI Avatar project for transforming documents into video content
 
@@ -39,14 +41,14 @@ Currently, I am working at **Odeabank** as a Junior ML Engineer focusing on AI &
 
 ## 🧠 Featured Projects
 
-### 🟡 AI Quiz Generator
-- Multi-stage LLM pipeline
-- Context-aware question generation (MCQ, TF, Fill)
-- Observability metrics (coverage, reuse rate)
-- Validation layers (similarity guard, answer validation)
+### 🚀 AI Hub – Internal AI Agent Platform
+- Internal multi-agent platform with 15+ specialized self-service agents (data cleaning, quality, anomaly detection, segmentation, forecasting, modeling, content generation)
+- Modular architecture enabling non-technical business users to upload datasets and generate insights without code
+- Streamlit-based interfaces, scikit-learn / classical ML core, optional LLM augmentation per agent
+- Includes: A/B Testing, Anomaly Detection, Data Cleaning, Data Comparison, Data Quality, Data Visualization, Feature Engineering, Forecasting, MailCraft, Mock Data Generator, Prompt Optimization, Quiz Generator, Segment Intelligence, Smart Modeling, Social Pulse AI
 
 **Tech Stack:**  
-`LLM` `Python` `Streamlit` `Prompt Engineering` `Evaluation Metrics`
+`LLM` `Python` `Streamlit` `scikit-learn` `Multi-Agent` `Prompt Engineering` `MLOps`
 
 ---
 
